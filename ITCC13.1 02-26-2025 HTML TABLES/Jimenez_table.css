@@ -1,0 +1,30 @@
+table {
+    border: 1px solid #3399CC;
+    border-spacing: 0; /* Replaces border-collapse: collapse */
+    border-radius: 15px; /* Optional: Add rounded corners to the entire table */
+    overflow: hidden; /* Clips inner square edges */
+}
+
+th { 
+    background-color: #3399CC;
+    color: white;
+    border: 1px solid #3399CC; /* Match table border */
+}
+
+td {
+    border: 1px solid #ffffff; /* Match table border */
+}
+
+/* Rounded corners for the top-left and top-right header cells */
+thead tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+}
+
+thead tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+}
+
+/* Optional: Zebra-striping for rows */
+tr:nth-of-type(even) {
+    background-color: #f5fafc;
+}
